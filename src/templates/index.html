@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CulinaryQuest - Your ultimate guide to discovering the best dining experiences, top restaurants, and featured dishes in your city.">
+    <meta name="theme-color" content="#4A90E2"/>
+    <title>CulinaryQuest</title>
+    <link rel="icon" href="./cutlery.png">
+    <link rel="manifest" href="./app.webmanifest">
+    <link rel="apple-touch-icon" href="./cutlery.png">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a href="#mainContent" class="skip-link">Skip to content</a>
+ 
+    <header class="app-bar">
+      <div class="app-bar__menu">
+        <button id="hamburgerButton" aria-label="navigation menu">☰</button>
+      </div>
+      <div class="app-bar__brand">
+        <h1>CulinaryQuest</h1>
+      </div>
+      <nav id="navigationDrawer" class="app-bar__navigation">
+        <ul>
+          <li><a href="#/home">Home</a></li>
+          <li><a href="#/favorite">Favorite</a></li>
+          <li><a href="https://github.com/pujo04" target="_blank" rel="noopener noreferrer">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="mainContent">
+      <div class="hero">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="./images/heros/optimized/hero-image_1-large.jpg">
+          <source
+            media="(min-width: 800px)"
+            srcset="./images/heros/optimized/hero-image_1-medium.jpg">
+          <img
+            src="./images/heros/optimized/hero-image_1-small.jpg"
+            alt="Hero Restaurant Banner"
+            width="100%"
+            style="object-fit: cover;">
+        </picture>
+        <div class="hero__inner">
+          <h2 class="hero__title">Explore Culinary Delights</h2>
+          <p class="hero__tagline">
+            Discover amazing restaurants and unforgettable dining experiences
+          </p>
+        </div>
+      </div>
+      
+      <section class="content">
+        <h2 class="content__heading">Explore Top Restaurants</h2>
+        <div id="restaurants" class="restaurants">
+        </div>
+      </section>
+      <script src="./index.js" defer></script>
+    </main>
+    <footer>
+      <div class="footer-bg"></div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>CulinaryQuest</h3>
+          <p>Discover the best dining experiences in your city.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#/home">Home</a></li>
+            <li><a href="#/favorite">Favorite</a></li>
+            <li><a href="https://github.com/pujo04" target="_blank" rel="noopener noreferrer">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/andreaspujos/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="material-icons">facebook</i></a>
+            <a href="https://www.linkedin.com/in/andreaspujos/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="material-icons">web</i></a>
+            <a href="https://www.linkedin.com/in/andreaspujos/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="material-icons">tiktok</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 CulinaryQuest. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

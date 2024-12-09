@@ -1,0 +1,391 @@
+/* responsive.css */
+ 
+/* Mobile Styles */
+@media screen and (max-width: 649px) {
+  .app-bar {
+    grid-template-columns: auto 1fr;
+    padding: 8px 16px;
+  }
+ 
+  .app-bar__menu {
+    display: flex;
+  }
+ 
+  .app-bar__navigation {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    background-color: var(--primary-color);
+    transition: left 0.3s ease;
+  }
+ 
+  .app-bar__navigation.open {
+    left: 0;
+  }
+ 
+  .app-bar__navigation ul {
+    flex-direction: column;
+  }
+ 
+  .app-bar__navigation ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+ 
+  .restaurants {
+    grid-template-columns: 1fr;
+  }
+  
+  .featured-dish__content {
+    flex-direction: column;
+  }
+ 
+  .featured-dish__image,
+  .featured-dish__info {
+    width: 100%;
+  }
+ 
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+ 
+  .footer-section {
+    width: 100%;
+    margin: 10px 0;
+    max-width: 400px;
+  }
+ 
+  .footer-bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+  }
+}
+ 
+/* Tablet and Small Desktop Styles */
+@media screen and (min-width: 650px) {
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 32px;
+  }
+ 
+  .app-bar__brand h1 {
+    font-size: 1.5em;
+  }
+ 
+  .app-bar__menu {
+    display: none;
+  }
+ 
+  .app-bar__navigation {
+    position: static;
+    width: 100%;
+  }
+ 
+  .app-bar__navigation ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+ 
+  .app-bar__navigation ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+ 
+  .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+ 
+  .restaurants {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ 
+  .reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+
+  .featured-dish__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+ 
+  .featured-dish__image {
+    width: 50%;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+ 
+  .featured-dish__info {
+    width: 50%;
+    text-align: left;
+  }
+ 
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+ 
+  .footer-section {
+    flex: 1;
+    margin: 0 10px;
+    min-width: 200px;
+  }
+ 
+  .footer-section h3 {
+    font-size: 1.2em;
+  }
+}
+ 
+/* Medium Desktop Styles */
+@media screen and (min-width: 800px) {
+  .app-bar__brand h1 {
+    font-size: 2em;
+  }
+ 
+  .hero {
+    min-height: 450px;
+  }
+ 
+  .hero__title {
+    font-size: 2.5em;
+  }
+ 
+  .hero__tagline {
+    font-size: 1.5em;
+  }
+}
+ 
+/* Large Desktop Styles */
+@media screen and (min-width: 850px) {
+  .restaurants {
+    grid-template-columns: repeat(3, 1fr);
+  }
+ 
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+ 
+  .footer-section {
+    margin: 0 15px;
+  }
+ 
+  .social-icons {
+    justify-content: flex-start;
+  }
+}
+ 
+/* Extra Large Desktop Styles */
+@media screen and (min-width: 1200px) {
+  .app-bar {
+    padding: 8px 64px;
+  }
+ 
+  .restaurants {
+    grid-template-columns: repeat(4, 1fr);
+  }
+ 
+  .hero {
+    min-height: 500px;
+    min-width: 1200px;
+  }
+ 
+  .featured-dish__image {
+    width: 40%;
+  }
+ 
+  .featured-dish__info {
+    width: 60%;
+  }
+ 
+  .footer-content {
+    max-width: 1400px;
+    padding: 0 30px;
+  }
+ 
+  .footer-section {
+    margin: 0 20px;
+  }
+ 
+  .footer-section h3 {
+    font-size: 1.3em;
+  }
+}
+ 
+/* Ultra Wide Screens */
+@media screen and (min-width: 1600px) {
+  .restaurants {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+ 
+  .app-bar {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 8px 64px;
+  }
+ 
+  .hero {
+    min-width: 1600px;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+ 
+  .footer {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+ 
+  .footer-content {
+    max-width: 1600px;
+    padding: 0 40px;
+  }
+ 
+  .footer-section {
+    margin: 0 25px;
+  }
+ 
+  .footer-section h3 {
+    font-size: 1.4em;
+  }
+}
+ 
+/* Interactive Hover Effects */
+@media screen and (min-width: 650px) {
+  /* Navigation Hover Effects */
+  .app-bar__navigation ul li a {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+ 
+  .app-bar__navigation ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+  }
+ 
+  .app-bar__navigation ul li a:hover::after {
+    width: 100%;
+  }
+ 
+  /* Restaurant Card Hover Effects */
+  .restaurant-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+ 
+  .restaurant-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+ 
+  /* Footer Link Hover Effects */
+  .footer-section ul li a {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+ 
+  .footer-section ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+  }
+ 
+  .footer-section ul li a:hover::after {
+    width: 100%;
+  }
+ 
+  /* Social Icons Hover */
+  .social-icons a {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+ 
+  .social-icons a:hover {
+    transform: scale(1.2);
+    color: var(--secondary-color);
+  }
+}
+ 
+/* Accessibility Enhancements */
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+ 
+/* Print Styles */
+@media print {
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+  }
+ 
+  .app-bar,
+  .hero,
+  .navigation {
+    display: none;
+  }
+ 
+  .main-content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .footer {
+    page-break-inside: avoid;
+  }
+ 
+  a {
+    text-decoration: underline;
+    color: #000 !important;
+  }
+}
+ 
+/* High Contrast Mode */
+@media screen and (-ms-high-contrast: active) {
+  body {
+    background-color: black;
+    color: white;
+  }
+ 
+  a {
+    color: yellow;
+  }
+ 
+  .restaurant-card,
+  .featured-dish {
+    border: 2px solid white;
+  }
+}
