@@ -1,7 +1,7 @@
 import 'regenerator-runtime';
 import CacheHelper from './utils/cache-helper';
 
-const CACHE_NAME = 'QulinaryQuest-V1';
+const CACHE_NAME = 'QulinaryQuest-V2';
 const assetsToCache = [
   './',
   './index.html',

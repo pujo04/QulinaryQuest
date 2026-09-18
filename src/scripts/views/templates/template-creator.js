@@ -51,16 +51,20 @@ const createRestaurantItemTemplate = (restaurant) => `
 `;
 
 const createLikeButtonTemplate = () => `
-  <button aria-label="like this restaurant" id="likeButton" class="like">
-    <i class="fa fa-heart-o" aria-hidden="true"></i>
-    Tambahkan ke Favorit
+  <button aria-label="like this restaurant" id="likeButton" class="like btn-fav-luxury btn-fav-capsule">
+    <svg class="fav-heart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+    </svg>
+    <span class="btn-fav-text">Tambah ke Favorit</span>
   </button>
 `;
 
 const createLikedButtonTemplate = () => `
-  <button aria-label="unlike this restaurant" id="likedButton" class="like">
-    <i class="fa fa-heart" aria-hidden="true"></i>
-    Hapus dari Favorit
+  <button aria-label="unlike this restaurant" id="likedButton" class="like btn-fav-luxury btn-fav-capsule active btn-fav-capsule--active">
+    <svg class="fav-heart-icon" width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+    </svg>
+    <span class="btn-fav-text">Tersimpan di Favorit</span>
   </button>
 `;
 
