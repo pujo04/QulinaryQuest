@@ -86,7 +86,10 @@ module.exports = {
       ],
     }),
     
-    new BundleAnalyzerPlugin(),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static',
+      openAnalyzer: false,
+    }),
 
     new ImageminWebpackPlugin({
       test: /\.(jpe?g|png|gif|svg)$/i,
